@@ -531,7 +531,7 @@ header{animation:bulbFlicker 8s step-end infinite;}
     <div>
       <div class="hdr-logo-big">GAP/RPT</div>
       <span class="hdr-logo-fraktur">Plumsense Compliance Report</span>
-      <div class="hdr-logo-sub">UA Denver A26 &bull; Unit #62549 &bull; Apr 1 &ndash; May 8, 2026 &bull; Compass Group / FLIK</div>
+      <div class="hdr-logo-sub">UA Denver A26 &bull; Unit #62549 &bull; Apr 1 &ndash; May 14, 2026 &bull; Compass Group / FLIK</div>
     </div>
     <div style="display:flex;flex-direction:column;align-items:flex-end;gap:.4rem;">
       <div class="rated">&#9760; Rated R</div>
@@ -541,7 +541,7 @@ header{animation:bulbFlicker 8s step-end infinite;}
   <div class="marquee-wrap"><div class="mtrack" id="mtrack"></div></div>
   <nav>
     <div class="ntab on" data-p="overview">&#127916; Now Showing</div>
-    <div class="ntab" data-p="days">&#128197; By Day <span class="nbadge">38</span></div>
+    <div class="ntab" data-p="days">&#128197; By Day <span class="nbadge">44</span></div>
     <div class="ntab" data-p="progress">&#127919; Progress <span class="nbadge" id="tc">0/38</span></div>
     <div class="ntab" data-p="table">&#128065; Audit Board</div>
   </nav>
@@ -564,16 +564,16 @@ header{animation:bulbFlicker 8s step-end infinite;}
       <div class="poster-sub">A compliance gap report &mdash; Spring 2026</div>
       <div class="poster-divider"><span>&diams;</span></div>
       <div class="poster-cast">
-        <div class="cast-item"><div class="cast-num">38</div><div class="cast-label">Days tracked</div></div>
-        <div class="cast-item"><div class="cast-num">38</div><div class="cast-label">Days with gaps</div></div>
-        <div class="cast-item"><div class="cast-num">0</div><div class="cast-label">Clean days</div></div>
-        <div class="cast-item"><div class="cast-num">72</div><div class="cast-label">Missing entries</div></div>
+        <div class="cast-item"><div class="cast-num">44</div><div class="cast-label">Days tracked</div></div>
+        <div class="cast-item"><div class="cast-num">8</div><div class="cast-label">Days with gaps</div></div>
+        <div class="cast-item"><div class="cast-num">36</div><div class="cast-label">Clean days</div></div>
+        <div class="cast-item"><div class="cast-num">10</div><div class="cast-label">Missing entries</div></div>
         <div class="cast-item"><div class="cast-num">20</div><div class="cast-label">Checklists tracked</div></div>
-        <div class="cast-item"><div class="cast-num accent">33</div><div class="cast-label">Thermo days missing</div></div>
+        <div class="cast-item"><div class="cast-num accent">0</div><div class="cast-label">Thermo days missing</div></div>
       </div>
       <div class="poster-bottom">
         <div class="poster-tag">&ldquo;Every missing log is a gap we can close together.&rdquo;</div>
-        <div class="poster-studio">Compass Group / FLIK Hospitality<br>Unit #62549 &bull; Denver Int&rsquo;l Airport<br>Apr 1 &ndash; May 8, 2026</div>
+        <div class="poster-studio">Compass Group / FLIK Hospitality<br>Unit #62549 &bull; Denver Int&rsquo;l Airport<br>Apr 1 &ndash; May 14, 2026</div>
       </div>
     </div>
   </div>
@@ -585,12 +585,12 @@ header{animation:bulbFlicker 8s step-end infinite;}
       <span class="bc-blink">&#x25A0;</span>
     </div>
     <div class="bc-grid">
-      <div class="bc-stat"><div class="bsn accent">33</div><div class="bsl">Thermo Verification<br>days missing</div></div>
-      <div class="bc-stat"><div class="bsn">14</div><div class="bsl">Bar Coolers &amp; Dish<br>days missing</div></div>
-      <div class="bc-stat"><div class="bsn">11</div><div class="bsl">Cook / Cool Log<br>days missing</div></div>
-      <div class="bc-stat"><div class="bsn">6</div><div class="bsl">Receiving<br>days missing</div></div>
-      <div class="bc-stat"><div class="bsn">5</div><div class="bsl">PM BOH Cleaning<br>days missing</div></div>
-      <div class="bc-stat"><div class="bsn">3</div><div class="bsl">FOH Fridges<br>days missing</div></div>
+      <div class="bc-stat"><div class="bsn accent">0</div><div class="bsl">Thermo Verification<br>days missing — Resolved!</div></div>
+      <div class="bc-stat"><div class="bsn">3</div><div class="bsl">Bar Coolers &amp; Dish<br>days missing</div></div>
+      <div class="bc-stat"><div class="bsn">3</div><div class="bsl">Cook / Cool Log<br>days missing</div></div>
+      <div class="bc-stat"><div class="bsn">3</div><div class="bsl">Receiving<br>days missing</div></div>
+      <div class="bc-stat"><div class="bsn">2</div><div class="bsl">FOH Fridges<br>days missing</div></div>
+      <div class="bc-stat"><div class="bsn accent">36</div><div class="bsl">Clean days<br>out of 44</div></div>
     </div>
   </div>
 
@@ -627,7 +627,7 @@ header{animation:bulbFlicker 8s step-end infinite;}
 
 <!-- CRIME BOARD -->
 <div class="page" id="page-table">
-  <div class="cb-intro"><span>8</span> Audit Findings &nbsp;&mdash;&nbsp; Plumsense Gaps &amp; EHA Citations &nbsp;&mdash;&nbsp; <span>Apr 1&ndash;May 8, 2026</span></div>
+  <div class="cb-intro"><span>8</span> Audit Findings &nbsp;&mdash;&nbsp; Plumsense Gaps &amp; EHA Citations &nbsp;&mdash;&nbsp; <span>Apr 1&ndash;May 14, 2026</span></div>
   <div class="cb-grid" id="cbGrid"></div>
 </div>
 
@@ -637,47 +637,53 @@ header{animation:bulbFlicker 8s step-end infinite;}
 
 <script>
 const DAYS=[
-  {date:"04/01",dow:"Wednesday",week:"Week I — Apr 1–4",missing:["Bar Coolers & Dish Temp Log"],sunday:false},
-  {date:"04/02",dow:"Thursday",week:null,missing:["Bar Coolers & Dish Temp Log","Thermo Verification"],sunday:false},
-  {date:"04/03",dow:"Friday",week:null,missing:["Bar Coolers & Dish Temp Log","Thermo Verification"],sunday:false},
-  {date:"04/04",dow:"Saturday",week:null,missing:["Bar Coolers & Dish Temp Log","Receiving","Thermo Verification"],sunday:false},
-  {date:"04/05",dow:"Sunday",week:null,missing:["Bar Coolers & Dish Temp Log","Thermo Verification"],sunday:true},
-  {date:"04/06",dow:"Monday",week:"Week II — Apr 5–11",missing:["Bar Coolers & Dish Temp Log","Thermo Verification"],sunday:false},
-  {date:"04/07",dow:"Tuesday",week:null,missing:["Bar Coolers & Dish Temp Log","Thermo Verification"],sunday:false},
-  {date:"04/08",dow:"Wednesday",week:null,missing:["Bar Coolers & Dish Temp Log","Thermo Verification"],sunday:false},
-  {date:"04/09",dow:"Thursday",week:null,missing:["Bar Coolers & Dish Temp Log","NEW!! Kitchen Final Cooking/Cooling Log"],sunday:false},
-  {date:"04/10",dow:"Friday",week:null,missing:["Bar Coolers & Dish Temp Log","Thermo Verification"],sunday:false},
-  {date:"04/11",dow:"Saturday",week:null,missing:["Bar Coolers & Dish Temp Log","Receiving","Thermo Verification"],sunday:false},
-  {date:"04/12",dow:"Sunday",week:null,missing:["NEW!! Kitchen Final Cooking/Cooling Log","Thermo Verification"],sunday:true},
-  {date:"04/13",dow:"Monday",week:"Week III — Apr 12–18",missing:["NEW!! Kitchen Final Cooking/Cooling Log","Thermo Verification"],sunday:false},
-  {date:"04/14",dow:"Tuesday",week:null,missing:["Thermo Verification"],sunday:false},
-  {date:"04/15",dow:"Wednesday",week:null,missing:["NEW!! Kitchen Final Cooking/Cooling Log","Thermo Verification"],sunday:false},
-  {date:"04/16",dow:"Thursday",week:null,missing:["PM BOH Cleaning","Thermo Verification"],sunday:false},
-  {date:"04/17",dow:"Friday",week:null,missing:["Receiving","Thermo Verification"],sunday:false},
-  {date:"04/18",dow:"Saturday",week:null,missing:["Bar Coolers & Dish Temp Log"],sunday:false},
-  {date:"04/19",dow:"Sunday",week:null,missing:["Bar Coolers & Dish Temp Log","NEW!! Kitchen Final Cooking/Cooling Log","PM BOH Cleaning","Thermo Verification"],sunday:true},
-  {date:"04/20",dow:"Monday",week:"Week IV — Apr 19–25",missing:["PM BOH Cleaning","Thermo Verification"],sunday:false},
-  {date:"04/21",dow:"Tuesday",week:null,missing:["NEW!! Kitchen Final Cooking/Cooling Log","Thermo Verification"],sunday:false},
-  {date:"04/22",dow:"Wednesday",week:null,missing:["NEW!! Kitchen Final Cooking/Cooling Log","Thermo Verification"],sunday:false},
-  {date:"04/23",dow:"Thursday",week:null,missing:["Thermo Verification"],sunday:false},
-  {date:"04/24",dow:"Friday",week:null,missing:["FOH Fridges","Thermo Verification"],sunday:false},
-  {date:"04/25",dow:"Saturday",week:null,missing:["Receiving","Thermo Verification"],sunday:false},
-  {date:"04/26",dow:"Sunday",week:null,missing:["NEW!! Kitchen Final Cooking/Cooling Log","Thermo Verification"],sunday:true},
-  {date:"04/27",dow:"Monday",week:"Week V — Apr 26–May 2",missing:["NEW!! Kitchen Final Cooking/Cooling Log","Thermo Verification"],sunday:false},
-  {date:"04/28",dow:"Tuesday",week:null,missing:["FOH Fridges","Thermo Verification"],sunday:false},
-  {date:"04/29",dow:"Wednesday",week:null,missing:["Thermo Verification"],sunday:false},
-  {date:"04/30",dow:"Thursday",week:null,missing:["PM BOH Cleaning"],sunday:false},
-  {date:"05/01",dow:"Friday",week:null,missing:["Thermo Verification"],sunday:false},
-  {date:"05/02",dow:"Saturday",week:null,missing:["Bar Coolers & Dish Temp Log","Receiving","Thermo Verification"],sunday:false},
-  {date:"05/03",dow:"Sunday",week:null,missing:["Receiving","Thermo Verification"],sunday:true},
-  {date:"05/04",dow:"Monday",week:"Week VI — May 3–8",missing:["Thermo Verification"],sunday:false},
-  {date:"05/05",dow:"Tuesday",week:null,missing:["NEW!! Kitchen Final Cooking/Cooling Log","Thermo Verification"],sunday:false},
-  {date:"05/06",dow:"Wednesday",week:null,missing:["NEW!! Kitchen Final Cooking/Cooling Log"],sunday:false},
-  {date:"05/07",dow:"Thursday",week:null,missing:["Thermo Verification"],sunday:false},
-  {date:"05/08",dow:"Friday",week:null,missing:["FOH Fridges","PM BOH Cleaning","Thermo Verification"],sunday:false},
+  {date:"04/01",dow:"Wednesday",week:"Week I — Apr 1–7",missing:[],sunday:false},
+  {date:"04/02",dow:"Thursday",week:null,missing:[],sunday:false},
+  {date:"04/03",dow:"Friday",week:null,missing:[],sunday:false},
+  {date:"04/04",dow:"Saturday",week:null,missing:["Receiving"],sunday:false},
+  {date:"04/05",dow:"Sunday",week:null,missing:[],sunday:true},
+  {date:"04/06",dow:"Monday",week:"Week II — Apr 6–12",missing:["Bar Coolers & Dish Temp Log"],sunday:false},
+  {date:"04/07",dow:"Tuesday",week:null,missing:[],sunday:false},
+  {date:"04/08",dow:"Wednesday",week:null,missing:[],sunday:false},
+  {date:"04/09",dow:"Thursday",week:null,missing:[],sunday:false},
+  {date:"04/10",dow:"Friday",week:null,missing:[],sunday:false},
+  {date:"04/11",dow:"Saturday",week:null,missing:["Receiving"],sunday:false},
+  {date:"04/12",dow:"Sunday",week:null,missing:["Bar Coolers & Dish Temp Log","FOH Fridges"],sunday:true},
+  {date:"04/13",dow:"Monday",week:"Week III — Apr 13–19",missing:[],sunday:false},
+  {date:"04/14",dow:"Tuesday",week:null,missing:[],sunday:false},
+  {date:"04/15",dow:"Wednesday",week:null,missing:[],sunday:false},
+  {date:"04/16",dow:"Thursday",week:null,missing:[],sunday:false},
+  {date:"04/17",dow:"Friday",week:null,missing:["Receiving"],sunday:false},
+  {date:"04/18",dow:"Saturday",week:null,missing:[],sunday:false},
+  {date:"04/19",dow:"Sunday",week:null,missing:[],sunday:true},
+  {date:"04/20",dow:"Monday",week:"Week IV — Apr 20–26",missing:[],sunday:false},
+  {date:"04/21",dow:"Tuesday",week:null,missing:[],sunday:false},
+  {date:"04/22",dow:"Wednesday",week:null,missing:[],sunday:false},
+  {date:"04/23",dow:"Thursday",week:null,missing:[],sunday:false},
+  {date:"04/24",dow:"Friday",week:null,missing:["FOH Fridges"],sunday:false},
+  {date:"04/25",dow:"Saturday",week:null,missing:[],sunday:false},
+  {date:"04/26",dow:"Sunday",week:null,missing:[],sunday:true},
+  {date:"04/27",dow:"Monday",week:"Week V — Apr 27–May 3",missing:[],sunday:false},
+  {date:"04/28",dow:"Tuesday",week:null,missing:[],sunday:false},
+  {date:"04/29",dow:"Wednesday",week:null,missing:[],sunday:false},
+  {date:"04/30",dow:"Thursday",week:null,missing:[],sunday:false},
+  {date:"05/01",dow:"Friday",week:null,missing:[],sunday:false},
+  {date:"05/02",dow:"Saturday",week:null,missing:[],sunday:false},
+  {date:"05/03",dow:"Sunday",week:null,missing:[],sunday:true},
+  {date:"05/04",dow:"Monday",week:"Week VI — May 4–10",missing:[],sunday:false},
+  {date:"05/05",dow:"Tuesday",week:null,missing:["Kitchen Final Cooking/Cooling Log"],sunday:false},
+  {date:"05/06",dow:"Wednesday",week:null,missing:["Kitchen Final Cooking/Cooling Log"],sunday:false},
+  {date:"05/07",dow:"Thursday",week:null,missing:[],sunday:false},
+  {date:"05/08",dow:"Friday",week:null,missing:[],sunday:false},
+  {date:"05/09",dow:"Saturday",week:null,missing:["Bar Coolers & Dish Temp Log"],sunday:false},
+  {date:"05/10",dow:"Sunday",week:null,missing:[],sunday:true},
+  {date:"05/11",dow:"Monday",week:"Week VII — May 11–15",missing:[],sunday:false},
+  {date:"05/12",dow:"Tuesday",week:null,missing:["Kitchen Final Cooking/Cooling Log"],sunday:false},
+  {date:"05/13",dow:"Wednesday",week:null,missing:[],sunday:false},
+  {date:"05/14",dow:"Thursday",week:null,missing:[],sunday:false},
 ];
 
-const TOTAL_GAPS=DAYS.filter(d=>d.missing.length>0).length;
+const TOTAL_GAPS=8;
 const Q=["something is missing...","the log was never filled","temperatures unknown","no one checked the cooler","the record shows nothing","the evidence has gone cold","the kitchen remembers everything","every entry counts"];
 const CLUES={"Thermo Verification":"the thermometer sits unused","Bar Coolers & Dish Temp Log":"no record of the night","NEW!! Kitchen Final Cooking/Cooling Log":"the cooling log went dark","Receiving":"the delivery went unrecorded","PM BOH Cleaning":"the night shift left no trace","FOH Fridges":"temperatures remain unknown"};
 function getClue(m){return m&&m.length?CLUES[m[0]]||"log never completed":"resolved";}
@@ -690,7 +696,7 @@ function getClue(m){return m&&m.length?CLUES[m[0]]||"log never completed":"resol
 ["perf-top","perf-bot"].forEach(id=>{const el=document.getElementById(id);if(el)for(let i=0;i<120;i++){const h=document.createElement("div");h.className="perf";el.appendChild(h);}});
 
 /* MARQUEE */
-const MI=["UA DEN A26 &mdash; Unit #62549","<span>Apr 1 &ndash; May 8, 2026</span>","38 Days Tracked","<span>38 Days With Gaps</span>","20 Checklists","<span>72 Missing Entries</span>","Thermo &mdash; <span>33 Days</span>","Bar Coolers &mdash; <span>14 Days</span>","We Can Fix This Together","<span>Not One Clean Day</span>","A Compass Group / FLIK Report","<span>Rated R &mdash; For Repeated Gaps</span>"];
+const MI=["UA DEN A26 &mdash; Unit #62549","<span>Apr 1 &ndash; May 14, 2026</span>","44 Days Tracked","<span>8 Days With Gaps</span>","20 Checklists","<span>10 Missing Entries</span>","Thermo &mdash; <span>Resolved ✓</span>","Bar Coolers &mdash; <span>3 Days</span>","Cook/Cool &mdash; <span>3 Days</span>","Receiving &mdash; <span>3 Days</span>","<span>36 Clean Days</span>","A Compass Group / FLIK Report","<span>Rated R &mdash; For Repeated Gaps</span>"];
 const mt=document.getElementById("mtrack");
 if(mt){const h=MI.map(i=>'<span class="mitem">'+i+'</span><span class="msep"> ⋄ </span>').join('');mt.innerHTML=h+h;}
 
@@ -758,7 +764,7 @@ buildProgress();
 document.getElementById("pbtn").addEventListener("click",()=>{fixed={};saveF(fixed);buildProgress();});
 
 /* EVIDENCE BOARD */
-const evData=[{cl:"Thermo Verification",n:33},{cl:"Bar Coolers & Dish Temp Log",n:14},{cl:"NEW!! Kitchen Final Cooking/Cooling Log",n:11},{cl:"Receiving",n:6},{cl:"PM BOH Cleaning",n:5},{cl:"FOH Fridges",n:3}];
+const evData=[{cl:"Receiving",n:3},{cl:"Bar Coolers & Dish Temp Log",n:3},{cl:"Kitchen Final Cooking/Cooling Log",n:3},{cl:"FOH Fridges",n:2}];
 const evGrid=document.getElementById("evGrid");
 if(evGrid){evData.forEach((s,i)=>{
   const short=s.cl.replace("NEW!! ","").replace("New! ","").replace("& Dish Temp Log","").replace("3/23","").trim();
